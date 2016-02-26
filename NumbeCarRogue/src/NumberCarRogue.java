@@ -7,20 +7,6 @@ public class NumberCarRogue {
 
         ArrayList<String> number = new ArrayList<>();
 
-/*
-        for (int i = 0; i < 10000; i++) {
-
-  //          String  randomNumber = Integer.toString(i).substring(0, 3);
-   //         number.add(randomNumber);
-            //System.out.println(randomNumber);
-        }
-*/
-
-/*
-        for (int i = 0; i < 3; i++) {
-            System.out.println(number.get(i));
-        }
-*/
 
         NumberCar.RogueNumberInit(number);
 
