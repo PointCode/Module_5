@@ -1,28 +1,31 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-//http://driveru.ru/story/363 список серий блатных номеров
+
 public class NumberCarRogue {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         ArrayList<String> number = new ArrayList<>();
-
-
         NumberCar.RogueNumberInit(number);
+        System.out.println("Всего номеров в базе: " + number.size());
+
+        System.out.println("Введите проверяемый номер автомодиля в формате 'А001АА01': ");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String carNumberInput = reader.readLine().trim();
 
 
-        for (int j = 0; j < number.size(); j++) {
+     /*   for (int j = 0; j < number.size(); j++) { // для вывода номеров в базе
             System.out.println(number.get(j));
-        }
+        }*/
 
-        System.out.println(number.size());
 
-     //   int count = Collections.frequency(number, "О999ОО");
-
-        String str = "О999ОО";
+        //      int count = Collections.frequency(number, "О999ОО");
 
         long begin = System.currentTimeMillis();
-             NumberCar.FoundNumber(number,str);
+        NumberCar.FoundNumber(number, carNumberInput);
 
         long end = System.currentTimeMillis();
         long finals = end - begin;
