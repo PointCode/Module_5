@@ -30,7 +30,4 @@ public class NumberCarRogue {
         System.out.println(" " + finals + " ms");
     }
 
-
-
-
 }

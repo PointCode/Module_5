@@ -29,7 +29,6 @@ public class NumberCar {
         return number;
 
     }
-
     public static void FoundNumber(ArrayList<String> number, String str) {
         int i;
         for (i = 0; i < number.size(); i++) {
