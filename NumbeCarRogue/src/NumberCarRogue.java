@@ -10,6 +10,7 @@ public class NumberCarRogue {
 
         ArrayList<String> number = new ArrayList<>();
         NumberCar.RogueNumberInit(number);
+        NumberCar.RogueNumberInitТNext(number);
         System.out.println("Всего номеров в базе: " + number.size());
 
         System.out.println("Введите проверяемый номер автомодиля в формате 'А001АА01': ");
