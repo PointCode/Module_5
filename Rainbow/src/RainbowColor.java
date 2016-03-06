@@ -4,7 +4,6 @@ public class RainbowColor {
 //--- иницилиируем массив цветами радуги
         String[] rainbow = {"Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Purple"};
 
-
 //---создаем класс реализующий стэк массива цвитов радуги и заполняем его
         StackRainbow stackRainbow = new StackRainbow(rainbow.length);
             for (int i = 0; i <rainbow.length; ++i) {
@@ -17,8 +16,8 @@ public class RainbowColor {
         }
 //--- раудга растворяется
         while (!stackRainbow.isEmpty()) {
-            String value = stackRainbow.deleteElement();
-            System.out.print(value);
+            System.out.print(stackRainbow.readTop());
+            stackRainbow.deleteElement();
             System.out.print(" ");
         }
 
