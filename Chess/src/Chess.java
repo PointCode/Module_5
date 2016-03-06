@@ -4,10 +4,10 @@ public class Chess {
         String[][] chess = new String[8][8];
 
         Character letter = 'A';
-        Character number = '1';
+        Character number;
 
-        int codeLettre = (int) letter;
-        int codeNumber = (int) number;
+        int codeLetter = (int) letter;
+        int codeNumber ;
 
         for (int i = 0; i < chess.length; i++) {
 
@@ -23,8 +23,8 @@ public class Chess {
             }
 
             System.out.println();
-            codeLettre++;
-            letter = (char) codeLettre;
+            codeLetter++;
+            letter = (char) codeLetter;
         }
     }
 
